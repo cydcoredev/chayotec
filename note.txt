@@ -1,0 +1,33 @@
+1. ติดตั้ง Git ในเครื่อง // สมัคร GitHub
+https://git-scm.com    > git --version
+
+2. ตั้งค่า Git ครั้งแรก
+git config --global user.name "ชื่อของคุณ"
+git config --global user.email "อีเมลที่ใช้ GitHub"
+
+3. ตรวจสอบว่าเซ็ตแล้ว
+git config --list
+
+4. สร้างพื้นที่เก็บโค้ดบน GitHub
+สร้าง Repository บน GitHub > New repository
+
+5. เชื่อมโปรเจคกับ GitHub
+git init
+git add .
+git commit -m "first commit"
+
+git remote add origin https://github.com/cydcoredev/chayotec.git
+git branch -M main
+git push -u origin main
+
+6. ดึงโค้ดไปอีกเครื่อง
+git clone https://github.com/cydcoredev/chayotec.git
+
+
+📍 ที่ทำงาน (หลังแก้โค้ดเสร็จ)
+git add .
+git commit -m "แก้ login api"
+git push
+
+📍 ที่บ้าน (ก่อนเริ่มทำ)
+git pull
